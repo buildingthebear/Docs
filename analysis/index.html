@@ -1,0 +1,591 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://buildthebear.online/analysis/">
+      
+      <link rel="icon" href="../extra/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Token Analysis - Build the Bear Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2H4m0 2h6v4H4V3M3 13v7h7v-2H5v-5H3m11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2h-6m0 2h6v4h-6v-4Z"/></svg>');}</style>
+
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra/css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#token-analysis-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../docs" title="Build the Bear Docs" class="md-header__button md-logo" aria-label="Build the Bear Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Build the Bear Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Token Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../docs" title="Build the Bear Docs" class="md-nav__button md-logo" aria-label="Build the Bear Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>
+
+    </a>
+    Build the Bear Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs" class="md-nav__link">
+        Directory
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../launch" class="md-nav__link">
+        Token Launch
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Token Analysis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="" class="md-nav__link md-nav__link--active">
+        Token Analysis
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-contract" class="md-nav__link">
+     Check the contract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-social-profiles" class="md-nav__link">
+     Check the social profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-chart" class="md-nav__link">
+     Check the chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-transaction" class="md-nav__link">
+     Check the transaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-progress" class="md-nav__link">
+     Check the progress
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minting" class="md-nav__link">
+        Minting NFTs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploying" class="md-nav__link">
+        Deploying Contracts
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-contract" class="md-nav__link">
+     Check the contract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-social-profiles" class="md-nav__link">
+     Check the social profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-chart" class="md-nav__link">
+     Check the chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-transaction" class="md-nav__link">
+     Check the transaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-progress" class="md-nav__link">
+     Check the progress
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="token-analysis-guide"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 22H4v-2c0-2.2 3.6-4 8-4s8 1.8 8 4M8 9h8v1c0 2.2-1.8 4-4 4s-4-1.8-4-4m11-6c-.6 0-1 .4-1 1v1h-1.5l-1.4-3c-.1-.2-.2-.4-.4-.5-.5-.5-1.3-.6-2-.3l-.7.2-.7-.3c-.7-.3-1.5-.2-2 .3-.2.2-.3.4-.4.6L7.5 6H6V5c0-.6-.4-1-1-1s-1 .4-1 1v1c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-.5-.4-1-1-1Z"/></svg></span> Token Analysis Guide</strong></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Document under construction. Additional resources and diagrams coming soon</p>
+</div>
+<p>Depending on the project, your risk-tolerance, and goals... items listed may not be applicable.
+Further, this is not a guaranteed path to finding safe "investments", and this documentation should never be treated as law.
+Information below is outlined as a list of details an investor may want to consider before entering a liquidity pool. </p>
+<h3 id="check-the-contract"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h4v-1.91L12.09 18H6v-2h8.09l2-2H6v-2h12.09L20 10.09V8l-6-6H6m7 1.5L18.5 9H13V3.5m7.15 9.5a.55.55 0 0 0-.4.16l-1.02 1.02 2.09 2.08 1.02-1.01c.21-.22.21-.58 0-.79l-1.3-1.3a.544.544 0 0 0-.39-.16m-2.01 1.77L12 20.92V23h2.08l6.15-6.15-2.09-2.08Z"/></svg></span> Check the contract </strong></h3>
+<p>There are many metrics you can measure on-chain, and many ways to obscure those metrics. It's important to understand what you're looking for, and to know how to verify what you're looking at.</p>
+<ul>
+<li>Use trusted analysis tools and telegram bots for high-level details on the current state of the token. Useful for liquidity metrics,<ul>
+<li><em><a href="https://moonarch.app/">Moonarch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em><a href="https://tokensniffer.com/">Token Sniffer <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em><a href="https://t.me/SafeAnalyzerbot">SafeAnalyzerBot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em><a href="https://t.me/BotDetectorBotPortal">BotDetectorBot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+</ul>
+</li>
+<li>Check the explorer, has the contract been verified? → <strong>Read it.</strong><ul>
+<li><em>Are there any suspicious looking operations?</em><ol>
+<li>Official solidity libraries are very readable by nature and well-written contracts should make it easy to follow the logic 
+2.Red flags are different for everyone but might include blacklisting operations, enabling/disabling trade functionality, etc.</li>
+</ol>
+</li>
+<li><em>What are some of the first events/transactions that were triggered with the contract?</em></li>
+<li><em>What does the holder distribution look like? (top 100)</em><ol>
+<li>Be wary of multi-wallets, liquidity swingers, and shady developers</li>
+<li>Some platforms will show you volume by address</li>
+</ol>
+</li>
+<li><em>How much value is held in the deployer/developer/marketing wallets?</em></li>
+<li><em>What does the transaction history of the creator look like?</em><ol>
+<li>Have they published any token contracts in the past? How recently? How'd they do?</li>
+<li>Where was the wallet funded from? If applicable, what is the transaction history of said address(es)?</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>*Reading the Explorer Guide Coming Soon</strong></p>
+<h3 id="check-the-social-profiles"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59 5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z"/></svg></span> Check the social profiles</strong></h3>
+<p>One of the easiest ways to tell if a team intends to maintain further development is to follow their social media.</p>
+<ul>
+<li>Does the project have a website?<ul>
+<li><em>Does the roadmap consist of anything other than "marketing"? Think about what's realistic and deliverable in any given timeframe</em></li>
+<li><em>Listen to your gut... does the quality or contents of the website match your confidence in the team's ability to deliver?</em></li>
+<li><em>Check the developers tools, what frameworks are they using?</em></li>
+</ul>
+</li>
+<li>How active is their twitter, when was it created?</li>
+<li>How active is their telegram group or discord server?<ul>
+<li><em>What quality of discourse is being had?</em></li>
+<li><em>How much attention to detail does the team have when sharing updates? (grammar, attitude, etc.)</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="check-the-chart"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19v1h18v2H2V2h2v15c3 0 6-2 8.1-5.6 3-5 6.3-7.4 9.9-7.4v2c-2.8 0-5.5 2.1-8.1 6.5C11.3 16.6 7.7 19 4 19Z"/></svg></span> Check the chart</strong></h3>
+<p>Don't trust a massive green candle until you've done enough research to validate the activity and justify an entry.</p>
+<ul>
+<li>What is the scope of your investment? Flip or Hold?<ul>
+<li><em>Traditional charting patterns may not matter much in micro-caps, but can be useful for larger cap coins</em></li>
+</ul>
+</li>
+<li>Are there any suspiciously timed trades in the order book? Many trades for the same amount?</li>
+<li>How active is their telegram group or discord server?<ul>
+<li><em>What quality of discourse is being had?</em></li>
+<li><em>How much attention to detail does the team have when sharing updates? (grammar, attitude, etc.)</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="check-the-transaction"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 2h4V0H2C.9 0 0 .9 0 2v4h2V2m20-2h-4v2h4v4h2V2c0-1.1-.9-2-2-2M2 18H0v4c0 1.1.9 2 2 2h4v-2H2v-4m20 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4M8 6V4h2v2H8m2 8v-2h2v2h-2m6-10h2v2h-2V4m2 2h2v2h-2V6m0 8h2v2h-2v-2m2-2h-4v6h4v2H4V4h2v2h2v4H6v2h2v2h2v2h2v2h2v-2h-2v-2h2v-4h-4V6h2V4h2v4h2v2h4v2M8 18v-2H6v2h2Z"/></svg></span> Check the transaction</strong></h3>
+<p>If you've covered all your green flags and are ready to add to the liquidity pool, keep the following tips in mind:</p>
+<ul>
+<li>Always check the contract address <strong>AND</strong> your input parameters before submitting a transaction (if hundred-million-dollar companies can blacklist their own router, you can easily miss a zero)</li>
+<li>Make sure the suggested gas cost is agreeable, don't get too comfortable hitting 'Confirm'</li>
+<li>When approving a token for trade, make sure you're really approving <em>that</em> token</li>
+</ul>
+<h3 id="check-the-progress"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2.03v2.02c4.39.54 7.5 4.53 6.96 8.92-.46 3.64-3.32 6.53-6.96 6.96v2c5.5-.55 9.5-5.43 8.95-10.93-.45-4.75-4.22-8.5-8.95-8.97m-2 .03c-1.95.19-3.81.94-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.885 9.885 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9L4.26 5.67M2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8.002 8.002 0 0 1 4.06 13h-2m5.04 5.37-1.43 1.37A9.994 9.994 0 0 0 11 22v-2a8.002 8.002 0 0 1-3.9-1.63m9.72-3.18-4.11-4.11c.41-1.04.18-2.26-.68-3.11-.9-.91-2.25-1.09-3.34-.59l1.94 1.94-1.35 1.36-1.99-1.95c-.54 1.09-.29 2.44.59 3.35.86.86 2.08 1.08 3.12.68l4.11 4.1c.18.19.45.19.63 0l1.04-1.03c.22-.18.22-.5.04-.64Z"/></svg></span> Check the progress</strong></h3>
+<p>So you've been hodling a while, and it's time to check back in on your investment. Here are some things to think about:</p>
+<ul>
+<li>Is progress being made by the team? Are they active in group chats? Check pinned messages before asking any questions</li>
+<li>Check out whatever the team has released<ul>
+<li><em>Does it look good? Is it usable? Is it being used? Would <strong>you</strong> use it?</em> </li>
+</ul>
+</li>
+</ul>
+<p><br></br><a class="md-button" href="https://www.buildthebear.market">Build the Bear Market <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg></span></a>&nbsp;&nbsp;&nbsp;<a class="md-button" href="https://twitter.com/BuildingtheBear">Twitter <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23Z"/></svg></span></a>&nbsp;&nbsp;&nbsp;<a class="md-button" href="https://www.t.me/BuildtheBear">Telegram <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6l-126.3-52.5-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488v-96c0-5.3 1.8-10.5 5.1-14.7l165.3-212.6c2.5-7.1-6.5-14.3-13-8.4l-179 161.9-32 28.9c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8.8 302.2.1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></span></a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../launch" class="md-footer__link md-footer__link--prev" aria-label="Previous: Token Launch" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Token Launch
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../minting" class="md-footer__link md-footer__link--next" aria-label="Next: Minting NFTs" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Minting NFTs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "toc.follow", "navigation.top", "content.tooltips"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>

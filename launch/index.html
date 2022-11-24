@@ -1,0 +1,791 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://buildthebear.online/launch/">
+      
+      <link rel="icon" href="../extra/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Token Launch - Build the Bear Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2H4m0 2h6v4H4V3M3 13v7h7v-2H5v-5H3m11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2h-6m0 2h6v4h-6v-4Z"/></svg>');}</style>
+
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra/css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#token-launch-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../docs" title="Build the Bear Docs" class="md-header__button md-logo" aria-label="Build the Bear Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Build the Bear Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Token Launch
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../docs" title="Build the Bear Docs" class="md-nav__button md-logo" aria-label="Build the Bear Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg>
+
+    </a>
+    Build the Bear Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs" class="md-nav__link">
+        Directory
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Token Launch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="" class="md-nav__link md-nav__link--active">
+        Token Launch
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-concept" class="md-nav__link">
+     Create your concept
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-social-profiles" class="md-nav__link">
+     Create your social profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-website" class="md-nav__link">
+     Create your website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-roadmap" class="md-nav__link">
+     Create your roadmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-artwork" class="md-nav__link">
+     Create your artwork
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-contracts" class="md-nav__link">
+     Create your contract(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-marketing-material" class="md-nav__link">
+     Create your marketing material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-marketing-plan" class="md-nav__link">
+     Create your marketing plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-launch-plan" class="md-nav__link">
+     Create your launch plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-token" class="md-nav__link">
+     Create your token
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis" class="md-nav__link">
+        Token Analysis
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minting" class="md-nav__link">
+        Minting NFTs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploying" class="md-nav__link">
+        Deploying Contracts
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-concept" class="md-nav__link">
+     Create your concept
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-social-profiles" class="md-nav__link">
+     Create your social profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-website" class="md-nav__link">
+     Create your website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-roadmap" class="md-nav__link">
+     Create your roadmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-artwork" class="md-nav__link">
+     Create your artwork
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-contracts" class="md-nav__link">
+     Create your contract(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-marketing-material" class="md-nav__link">
+     Create your marketing material
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-marketing-plan" class="md-nav__link">
+     Create your marketing plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-launch-plan" class="md-nav__link">
+     Create your launch plan
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-your-token" class="md-nav__link">
+     Create your token
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="token-launch-guide"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 22H4v-2c0-2.2 3.6-4 8-4s8 1.8 8 4M8 9h8v1c0 2.2-1.8 4-4 4s-4-1.8-4-4m11-6c-.6 0-1 .4-1 1v1h-1.5l-1.4-3c-.1-.2-.2-.4-.4-.5-.5-.5-1.3-.6-2-.3l-.7.2-.7-.3c-.7-.3-1.5-.2-2 .3-.2.2-.3.4-.4.6L7.5 6H6V5c0-.6-.4-1-1-1s-1 .4-1 1v1c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-.5-.4-1-1-1Z"/></svg></span> Token Launch Guide</strong></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Document under construction. Additional resources and diagrams coming soon</p>
+</div>
+<p>Depending on your project/expectations/goals, items listed may not be applicable.
+Further, this is not a guaranteed path to launching or running a successful token, and this documentation should never be treated as law.
+Information below is outlined as a checklist of sorts, actions a builder may want to consider before launching a token.</p>
+<h3 id="create-your-concept"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35L12 4.15M5 15.91l6 3.38v-6.71L5 9.21v6.7m14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69l6-3.38m-5.15-2.55 6.28-3.63-.58-1.01-6.28 3.63.58 1.01Z"/></svg></span> Create your concept</strong></h3>
+<p>There isn't a right or wrong answer to what projects concept should consist of. Folks are interested in just about anything you can imagine, and there's plenty of room at the table for all of us to eat.</p>
+<ul>
+<li>Trend tokens -<ul>
+<li><em>Predict the future - <a href="https://www.quantumrun.com/future-timeline/2023">Quantumrun <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em>Ride the coattails of success (Mini, Baby, v2, Community, etc.) - <a href="https://coinmarketcap.com/best-cryptos/">CoinMarketCap <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em>Create the trend with unique tokenomics or a new meta - <a href="https://www.google.com/search?q=concept+generator">Concept Generators <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em>Or make a degenerate deep-fried meme</em></li>
+</ul>
+</li>
+<li>Utility tokens -<ul>
+<li><em>Rewards/reflections, charity, governance, tool usage, play-2-earn</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="create-your-social-profiles"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59 5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z"/></svg></span> Create your social profiles</strong></h3>
+<p>There should be a gateway (or two) for your community to interact with each other, get in touch with the team, and feel heard as investors.
+No room for fear, uncertainty, and doubt (FUD) when the team &amp; community members move with confidence, certainty, and conviction (CCC™).</p>
+<ul>
+<li>E-mail address - <a href="https://www.gmail.com/">Gmail <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Google Voice phone number (use that ⤴) - <a href="https://voice.google.com/">Google Voice <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Telegram account and channel (use that ⤴) - <a href="https://telegram.org/apps">Telegram <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a><ul>
+<li><em>Start setting up Rose (filters, chat settings) - <a href="https://missrose.org/guide/">Rose Guide <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em>Find a couple moderators</em></li>
+</ul>
+</li>
+<li>Twitter - <a href="https://twitter.com/">Twitter <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Discord</li>
+</ul>
+<h3 id="create-your-website"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M21 9h-8V3h8v6m-8 9.06V11h8v.1c-.76 0-1.43.4-1.81.79L13 18.06M11 13H3V3h8v10m0 8H3v-6h8v6Z"/></svg></span> Create your website</strong></h3>
+<p>There are many factors to consider when building your site; representation, usability, a11y, branding, UI-UX, etc.
+<strong>Take your time.</strong> Present the project how you intend for it to be presented.</p>
+<ul>
+<li>Purchase domain name - <a href="https://www.name.com/">Name.com <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://domains.google/">Google Domains <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a><ul>
+<li><em>Be sure to protect registrar</em></li>
+<li><em>Optionally get domain/hosting from same provider; many offer WYSIWYG editors</em><ol>
+<li><a href="https://www.godaddy.com/">GoDaddy <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li><a href="https://www.squarespace.com/">SquareSpace <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li><a href="https://www.wix.com/">Wix <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Set up hosting (if separate) - <a href="https://aws.amazon.com/amplify/">AWS <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Design and Build your website (details, socials, roadmap, tooling, etc.) -<ul>
+<li><em>SPA Hosting</em><ol>
+<li><a href="https://pages.github.com/">Github Pages: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li><a href="https://docs.amplify.aws/">Amplify <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+</ol>
+</li>
+<li><em>De-Fi Integrations</em><ol>
+<li><a href="https://web3js.readthedocs.io/en/v1.8.0/">Web3 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li><a href="https://docs.walletconnect.com/">WalletConnect <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="create-your-roadmap"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5l-.16.03L15 5.1 9 3M8 5.45v11.7l-3 1.16V6.46l3-1.01m2 .02 4 1.4v11.66l-4-1.4V5.47m9 .23v11.84l-3 1.01V6.86l3-1.16m-11.54.6-1.89.67v2.15l1.89-.67V6.3m0 2.75-1.89.67v2.15l1.89-.67V9.05m0 2.75-1.89.67v2.15l1.89-.67V11.8m0 2.75-1.89.67v2.15l1.89-.67v-2.15Z"/></svg></span> Create your roadmap</strong></h3>
+<p>Set realistic goals for your project and make detailed plans to achieve them. </p>
+<ul>
+<li>Utilities -<ul>
+<li><em>Lottery, NFTs</em></li>
+<li><em>Staking, Rewards calculator</em></li>
+<li><em>Telegram/Discord/Twitter bots</em></li>
+<li><em>White Paper (if applicable)</em></li>
+</ul>
+</li>
+<li>Marketing -<ul>
+<li><em>Only share top-level strategies (don't show all the cards)</em></li>
+<li><em>Traditional cryptosphere advertising (shilling, calls, ads, etc.)</em></li>
+<li><em>Real-world presence (charity, merch, billboards/flyers, etc.)</em></li>
+</ul>
+</li>
+<li>Milestones &amp; Goals (realistic metrics)</li>
+</ul>
+<h3 id="create-your-artwork"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m2.53 19.65 1.34.56v-9.03l-2.43 5.86c-.41 1.02.06 2.19 1.09 2.61m19.5-3.7L17.07 4a2 2 0 0 0-1.81-1.25c-.26 0-.53.04-.79.15L7.1 5.95a2.02 2.02 0 0 0-1.23 1.8c-.01.25.04.54.13.8l5 11.95c.29.78 1.03 1.24 1.81 1.25.26 0 .52-.05.77-.15l7.36-3.05a1.994 1.994 0 0 0 1.09-2.6M7.88 8.75a1 1 0 0 1-1-1 1 1 0 0 1 1-1c.55 0 1 .45 1 1s-.45 1-1 1m-2 11a2 2 0 0 0 2 2h1.45l-3.45-8.34v6.34Z"/></svg></span> Create your artwork</strong></h3>
+<p>One of the most important parts of a successful project is the branding. Advertisements and artwork need to be eye-catching (at least for the type of eyes you're hoping to catch).</p>
+<ul>
+<li>Palette for marketing materials - <a href="https://coolors.co/">Coolors <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>A set of emojis that embody your theme - <a href="https://www.freetool.dev/emoji-picker">Picker <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Logo, banners, message thumbnails - <a href="https://openai.com/dall-e-2/">DALL·E 2 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Sticker pack(s) and memes - <a href="https://telegram.me/stickers">Telegram Sticker Bot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Fancy motion graphics - <a href="https://www.fiverr.com/search/gigs?query=logo%20animation&amp;source=drop_down_filters&amp;ref_ctx_id=ae09311835cd8acb81d23b7b7e49f78e&amp;search_in=category&amp;search-autocomplete-original-term=logo%20animation&amp;sub_category=104&amp;ref=animation_type%3A2d_reveal%2C3d_reveal%7Cprice_buckets%3A0%7Cdelivery_time%3A1">Fiverr <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Art for potential NFTs</li>
+</ul>
+<h3 id="create-your-contracts"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.11 0-2 .89-2 2v16a2 2 0 0 0 2 2h4v-1.91L12.09 18H6v-2h8.09l2-2H6v-2h12.09L20 10.09V8l-6-6H6m7 1.5L18.5 9H13V3.5m7.15 9.5a.55.55 0 0 0-.4.16l-1.02 1.02 2.09 2.08 1.02-1.01c.21-.22.21-.58 0-.79l-1.3-1.3a.544.544 0 0 0-.39-.16m-2.01 1.77L12 20.92V23h2.08l6.15-6.15-2.09-2.08Z"/></svg></span> Create your contract(s)</strong></h3>
+<p>Attention to detail is critically important during the contract development phase. Ensure your features have been well-tested, and don't become another exploit statistic.</p>
+<ul>
+<li>Decide on tokenomics and liquidity amount -<ul>
+<li><em>Unique features tend to do well</em></li>
+<li><em>Long-term, would be wise to hold a small % of supply in deployer wallet</em><ol>
+<li>Fund widget/app pools</li>
+<li>Giveaways, aidrops, competitions, chat games</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Decide on anti-abuse measures -<ul>
+<li><em>Low max hold, even lower max amount transferred per transaction</em></li>
+<li><em>Blacklist txs within X blocks of launch block</em></li>
+<li><em>Let potential searchers surrender their trades</em></li>
+<li><em>Gradually lower sell tax post-launch</em></li>
+</ul>
+</li>
+<li>Include your social links, ASCII masterpieces, and easter eggs <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.89 6.36C8.23 3.91 10 2 12 2c2 0 3.77 1.91 5.11 4.36-.85.21-1.61.71-2.11 1.41a3.712 3.712 0 0 0-5.2-.8c-.3.22-.58.49-.8.8-.5-.7-1.26-1.2-2.11-1.41M15 18.06l-3-3-3 3-3-3-1.27 1.27a7.504 7.504 0 0 0 9.11 5.43 7.529 7.529 0 0 0 5.43-5.43L18 15.06l-3 3m-6-2.12 3-3 3 3 3-3 1.5 1.5c-.13-2.31-.7-4.58-1.69-6.68-1.16.1-2.06 1.07-2.06 2.24h-1.5A2.25 2.25 0 0 0 12 7.75 2.25 2.25 0 0 0 9.75 10h-1.5c0-1.17-.9-2.14-2.06-2.24-.99 2.1-1.56 4.37-1.69 6.68l1.5-1.5 3 3Z"/></svg></span> in the comments</li>
+<li>Finish any other utility contracts that need to be prepared at launch</li>
+<li>Triple-test everything</li>
+<li>Ensure commonly used tools show no red flags (post-launch) -<ul>
+<li><em><a href="https://t.me/SafeAnalyzerbot">SafeAnalyzerBot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em><a href="https://t.me/SafeAnalyzerbot">TokenSniffer <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em><a href="https://moonarch.app/">Moonarch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+</ul>
+</li>
+</ul>
+<p><strong>*Contract Repo Coming Soon</strong></p>
+<h3 id="create-your-marketing-material"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m1 18h2v-6H7v6m4 0h2v-8h-2v8m4 0h2v-4h-2v4Z"/></svg></span> Create your marketing material</strong></h3>
+<p>Get ready to present your project. Have informative descriptions/details pre-written for quick posts and rapid sharing.</p>
+<ul>
+<li>Short, medium, and long format copy-texts, variations with and without links -<ul>
+<li>Be brief and genuine, don't oversell yourself or appear desperate for eyes</li>
+</ul>
+</li>
+<li>Scheduled tweets/posts for steady engagement</li>
+<li>Lore/larp -<ul>
+<li><em>Anonymous team</em></li>
+<li><em>Link some whale wallets</em></li>
+<li><em>"For the culture", "Based", "King", etc. You get the point</em></li>
+</ul>
+</li>
+<li>Script options for potential AMAs</li>
+</ul>
+<h3 id="create-your-marketing-plan"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7H3m4 4H5v2h2v-2m0-4V5H5v2h2m0 12v-2H5v2h2Z"/></svg></span> Create your marketing plan</strong></h3>
+<p>Another critically important phase of a healthy project launch is outlining a detailed marketing plan. You're steering the ship; you should know where it's headed... and when. </p>
+<ul>
+<li>Find a trustworthy group of flooring enthusiasts</li>
+<li>First pump-to-floor should be from word-of-mouth ONLY</li>
+<li>Group attitude should highlight the importance of working for your bags, developers are not here to bail you out -<ul>
+<li><em>Respectful, honest, clean, clear, and concise communication</em></li>
+<li><em>No tolerance for violence, racism, bigotry, or nudity</em></li>
+<li><em>Remember that your users &amp; community are a large part of your marketing presence</em></li>
+</ul>
+</li>
+<li>Various competitions, 0% tax bonanzas, active participant giveaways - <a href="https://gleam.io/app/competitions">Gleam <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Play chat games with the community. Bots, polls, media and such, all create entertaining content and can support your project concept</li>
+<li>Host or get involved in AMAs</li>
+<li>Costly options -<ul>
+<li><em>Calls should be spaced to bring the right volume, at the right time, for the right price. We'd advise against calling your project on launch day</em> <em><strong>(if they can't hold 24hrs, they won't)</strong></em><ol>
+<li>Callers rankings - <a href="https://bscgrow.com/who-do-you-follow/">BSC Grow <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+</ol>
+</li>
+<li><em>'SHILL Team Six' (twitter and telegram sers). There are plenty of services you can purchase for a reasonable price. Take care to make sure you choose correctly</em></li>
+<li><em>Message-board posts: <a href="https://www.reddit.com/search/?q=Fair%20Launch&amp;include_over_18=1&amp;type=sr">De-Fi Subreddits <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://boards.4channel.org/biz/">4chan <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, etc.</em></li>
+<li><em>Relevant Ad Spaces: <a href="https://www.cameo.com/">Cameo <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://www.4channel.org/advertise">4chan <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://poocoin.app/promote/banners">Poocoin <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://t.me/MoonarchPromo">Moonarch <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+<li><em>Farm <a href="https://tokpie.io/blog/best-token-voting-platforms-free-listing/">coin-voting websites <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+</ul>
+</li>
+<li>Deliver on roadmap items and share news of advances</li>
+<li>Put everything on the calendar</li>
+</ul>
+<h3 id="create-your-launch-plan"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.2 0-.4.1-.6.2L3.5 6.6c-.3.2-.5.5-.5.9v9c0 .4.2.7.5.9l7.9 4.4c.2.1.4.2.6.2s.4-.1.6-.2l.9-.5c-.3-.6-.4-1.3-.5-2v-6.7l6-3.4V13c.7 0 1.4.1 2 .3V7.5c0-.4-.2-.7-.5-.9l-7.9-4.4c-.2-.1-.4-.2-.6-.2m0 2.2 6 3.3-2 1.1-5.9-3.4 1.9-1M8.1 6.3 14 9.8l-2 1.1-6-3.4 2.1-1.2M5 9.2l6 3.4v6.7l-6-3.4V9.2m16.3 6.6-3.6 3.6-1.6-1.6L15 19l2.8 3 4.8-4.8-1.3-1.4Z"/></svg></span> Create your launch plan</strong></h3>
+<p>Regardless of scope, nobody wants their token chart to be pumped and dumped from the jump. Take your time and pay great attention to detail when constructing your launch formula.</p>
+<ul>
+<li>Be ready with a handful of releases to space out over launch week -<ul>
+<li><em>Degenerates need to see new developments every day, or they lose interest/confidence</em></li>
+<li><em>Create mini-marketing plans to share new developments (shill raids, community posts, etc.)</em></li>
+</ul>
+</li>
+<li>Determine whether it will be a public/private presale, or fair launch -<ul>
+<li><em>Trusted presaling options - <a href="https://www.pinksale.finance/">Pinksale <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a>, <a href="https://gempad.app/presales">Gempad <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></em></li>
+</ul>
+</li>
+<li>Do a dry-run on the test network, ensure that your contracts are entirely functional</li>
+<li>Pick a time and date, start the clock - <a href="https://countingdownto.com/">Embeddable Countdown <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Make sure your flooring enthusiasts are ready</li>
+</ul>
+<h3 id="create-your-token"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27l-2.77 6.1M5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83-.78.78-2.05.78-2.83 0m-5.66 7.07-1.41-1.41 1.41 1.41M6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22h1.41M2 22h1.41l4.77-4.76-1.42-1.41L2 20.59V22m0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76v1.41Z"/></svg></span> Create your token</strong></h3>
+<p>Double check everything you've done up to this point, and everything you plan to do once trading is live. There's no going back (unless you launch a v2 LOL)</p>
+<ul>
+<li>Fund a fresh wallet address with liquidity and deployment funds from a CEX</li>
+<li>Deploy contract early and unannounced to deter fakes -<ul>
+<li><em>Verify contract bytecode at the last minute to deter snipers</em></li>
+<li><em>Perform anti-abuse actions</em></li>
+</ul>
+</li>
+<li>Lock liquidity pool tokens immediately after adding liquidity - <a href="https://hibiki.finance/locker">Hibiki Locker <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a></li>
+<li>Configure telegram bots -<ul>
+<li><em>Update Rose's settings for chat, filters for contract, liquidity, tokenomics, swap, etc.</em></li>
+<li><em>Add and configure buy alert &amp; pricing bots</em><ol>
+<li><a href="https://tgbot.bogged.finance/home">Bog Bot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.09 20c.12.72.37 1.39.72 2H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-.34 0-.67.04-1 .09V4h-5v8l-2.5-2.25L8 12V4H6v16h7.09M19 15l-3 3h2v4h2v-4h2l-3-3Z"/></svg></span></a> </li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Try to be present in your groups chat while people are excited -<ul>
+<li><em>Poll to see what your community wants</em></li>
+<li><em>Share previews of upcoming releases</em></li>
+<li><em>Host events (AMAs, giveaways, games, etc.)</em></li>
+</ul>
+</li>
+<li>Continue with your marketing plan</li>
+<li>Work on your roadmap items</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p><img align="left" alt="Cheers!" src="../extra/img/cheers.png" /> Cheers, to building in the bear market!</p>
+</div>
+<p><strong>*Contract Deployment Guide Coming Soon</strong></p>
+<p><br></br><a class="md-button" href="https://www.buildthebear.market">Build the Bear Market <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.75 19.13c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 11.25c-1.24 0-2.25-.84-2.25-1.87 0-1.04 1.01-1.88 2.25-1.88s2.25.84 2.25 1.88c0 1.03-1.01 1.87-2.25 1.87m-3.75 7.88c-.83 0-1.5-.84-1.5-1.88 0-1.03.67-1.87 1.5-1.87s1.5.84 1.5 1.87c0 1.04-.67 1.88-1.5 1.88M12 8.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75M18.75 12c-.32 0-.63.07-.91.2-.48-.61-1.13-1.13-1.91-1.53.57-.8.91-1.77.91-2.82v-.06c1.09-.23 1.91-1.2 1.91-2.37 0-1.33-1.09-2.42-2.42-2.42-.69 0-1.33.29-1.75.75a4.813 4.813 0 0 0-5.16 0C9 3.29 8.36 3 7.67 3 6.34 3 5.25 4.09 5.25 5.42c0 1.16.82 2.13 1.9 2.37v.06c0 1.05.35 2.03.91 2.82-.77.4-1.42.92-1.9 1.53A2.24 2.24 0 0 0 3 14.25c0 1.25 1 2.25 2.25 2.25h.06c-.04.24-.06.5-.06.75 0 2.07 1.34 3.75 3 3.75 1.01 0 1.9-.63 2.45-1.59.42.06.85.09 1.3.09.45 0 .88-.03 1.3-.09.55.96 1.44 1.59 2.45 1.59 1.66 0 3-1.68 3-3.75 0-.25-.02-.51-.06-.75h.06c1.25 0 2.25-1 2.25-2.25S20 12 18.75 12"/></svg></span></a>&nbsp;&nbsp;&nbsp;<a class="md-button" href="https://twitter.com/BuildingtheBear">Twitter <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23Z"/></svg></span></a>&nbsp;&nbsp;&nbsp;<a class="md-button" href="https://www.t.me/BuildtheBear">Telegram <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6l-126.3-52.5-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488v-96c0-5.3 1.8-10.5 5.1-14.7l165.3-212.6c2.5-7.1-6.5-14.3-13-8.4l-179 161.9-32 28.9c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8.8 302.2.1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></span></a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../docs" class="md-footer__link md-footer__link--prev" aria-label="Previous: Directory" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Directory
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../analysis" class="md-footer__link md-footer__link--next" aria-label="Next: Token Analysis" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Token Analysis
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "toc.follow", "navigation.top", "content.tooltips"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>

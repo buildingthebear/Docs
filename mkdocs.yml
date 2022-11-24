@@ -1,0 +1,55 @@
+site_name: Build the Bear Docs
+site_url: https://buildthebear.online/
+site_dir: ./docs
+docs_dir: ./markdown
+nav:
+  - Directory: index.md
+  - Token Launch: launch.md
+  - Token Analysis: analysis.md
+  - Minting NFTs: minting.md
+  - Deploying Contracts: deploying.md
+theme:
+  name: material
+  favicon: extra/img/favicon.png
+  custom_dir: ./overrides
+  icon:
+    logo: buildthebear/in-progress
+    admonition:
+      note: buildthebear/in-progress
+      warning: buildthebear/in-progress
+      info: buildthebear/in-progress
+      success: buildthebear/in-progress
+      example: material/lan-connect
+  palette:
+    primary: white
+    accent: amber
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - content.tooltips
+use_directory_urls: true
+extra_css:
+  - extra/css/extra.css
+extra:
+  generator: false
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - md_in_html

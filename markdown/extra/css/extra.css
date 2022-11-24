@@ -1,0 +1,41 @@
+.md-button {
+    color: black !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.md-footer {
+    background-color: #fff;
+    color: black;
+}
+
+.md-footer-meta__inner.md-grid {
+    display: none;
+}
+
+a.md-footer__link {
+    padding-top: 0.8rem;
+}
+
+a.md-footer__title {
+    padding-top: 0.8rem;
+}
+
+a.md-footer__link:hover svg {
+    color: #fa0;
+}
+
+.md-footer__title, .md-footer__direction {
+    padding: 0;
+}
+
+.admonition {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-left: 4px solid !important;
+}
+
+.admonition.info { border-color: #00b8d4 !important; }
+.admonition.warning { border-color: #ff9100 !important; }
+.admonition.example { border-color: #7c4dff !important; }
+.admonition.success { border-color: #00c853 !important; }
