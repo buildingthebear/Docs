@@ -28,7 +28,7 @@ a.md-footer__link:hover svg {
     padding: 0;
 }
 
-.admonition, .details {
+.admonition {
     border-top: none !important;
     border-bottom: none !important;
     border-right: none !important;
@@ -37,6 +37,5 @@ a.md-footer__link:hover svg {
 
 .admonition.info { border-color: #00b8d4 !important; }
 .admonition.warning { border-color: #ff9100 !important; }
+.admonition.example { border-color: #7c4dff !important; }
 .admonition.success { border-color: #00c853 !important; }
-
-.details.example { border-color: #7c4dff !important; }

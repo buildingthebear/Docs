@@ -18,7 +18,7 @@ Install dependencies:
 Build and serve the app:
 
 ```bash
-    mkdocs serve
+    mkdocs build && mkdocs serve
 ```
 
 ## Contributing
