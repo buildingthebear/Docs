@@ -47,7 +47,7 @@ Remix allows you to develop, debug, and deploy contracts with no setup required.
     ![Cheers!](../extra/img/cheers.png){ align=left } Cheers, you're a deployooor!
 
 <br></br>
-[Build the Bear Market :buildthebear-in-progress:](https://www.buildthebear.market){ .md-button }
+[Build the Bear Market :buildthebear-btb-logo-alpha:](https://www.buildthebear.market){ .md-button }
 [GitHub :material-git:](https://github.com/Build-the-Bear){ .md-button }
 [Twitter :material-twitter:](https://twitter.com/BuildingtheBear){ .md-button }
 [Telegram :material-alert-octagram:](https://www.t.me/BuildtheBear){ .md-button }

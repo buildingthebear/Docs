@@ -64,7 +64,7 @@ Set realistic goals for your project and make detailed plans to achieve them. Th
 
 - Utilities - what do you have to offer?
     * _Lottery systems, NFTs with perks_
-    * _Staking pool, Rewards calculator_
+    * _Staking pools, Rewards calculator_
     * _Telegram/Discord/Twitter bots_
 2. Marketing -
     * _Only share top-level strategies (don't show all the cards)_
@@ -76,6 +76,8 @@ Set realistic goals for your project and make detailed plans to achieve them. Th
 ### **:material-palette-swatch: Create your artwork**
 
 One of the largest factors in successfully marketing a project is branding. Advertisements and artwork need to be eye-catching (at least for the type of eyes you're hoping to catch).
+
+Artificial intelligence has given birth to dozens of free storyboarding, brainstorming, graphics, and design tools lately.. you just have to go looking for them.
 
 - Palette for marketing materials - [Coolors :material-book-arrow-up-outline:](https://coolors.co/)
 2. Set of emojis that embody your theme - [Picker :material-book-arrow-up-outline:](https://www.freetool.dev/emoji-picker)
@@ -103,7 +105,7 @@ Attention to detail is essential during the contract development phase. Ensure y
 5. Triple-test everything
 6. Ensure commonly used tools show no red flags (post-launch) -
     * _[SafeAnalyzerBot :material-book-arrow-up-outline:](https://t.me/SafeAnalyzerbot)_
-    * _[TokenSniffer :material-book-arrow-up-outline:](https://t.me/SafeAnalyzerbot)_
+    * _[TokenSniffer :material-book-arrow-up-outline:](https://tokensniffer.com/)_
     * _[Moonarch :material-book-arrow-up-outline:](https://eth.moonarch.app/)_
 
 ***Contract Repo Coming Soon**
@@ -131,7 +133,7 @@ Another critically important phase of a healthy project launch is outlining a de
     * _Respectful, honest, clean, clear, and concise communication_
     * _No tolerance for violence, racism, bigotry, or nudity_
     * _Remember that your users & community are a large part of your marketing presence. They represent you_
-4. Various competitions, 0% tax bonanzas, active participant giveaways - [Gleam :material-book-arrow-up-outline:](https://gleam.io/app/competitions)
+4. Various competitions, 0% tax bonanzas, active member giveaways - [Gleam :material-book-arrow-up-outline:](https://gleam.io/app/competitions), [Kickoff :material-book-arrow-up-outline:](https://kickofflabs.com/)
 5. Play chat games with the community; bots, polls, media and such, all create entertaining content and can support your project's concept
 6. Host or get involved in AMAs/Spaces
 7. Costly options -
@@ -163,14 +165,13 @@ Double check everything you've done up to this point, and everything you plan to
 
 - Fund a fresh wallet address with liquidity and deployment funds from a CEX
 2. Deploy contract early and unannounced to deter fakes -
-    * _Verify contract bytecode at the last minute to deter snipers_
+    * _Optionally, delay verification to deter snipers_
     * _Perform anti-abuse actions_
     * _See [Further Reading](#further-reading)_
 3. Lock liquidity pool tokens immediately after adding liquidity - [Unicrypt :material-book-arrow-up-outline:](https://app.unicrypt.network/)
 4. Configure telegram bots -
     * _Update Rose's settings for chat, filters for contract, liquidity, tokenomics, swap, etc._
-    * _Add and configure buy alert & pricing bots_
-        1. [Bog Bot :material-book-arrow-up-outline:](https://tgbot.bogged.finance/home) 
+    * _Add and configure buy alert or pricing bots_
 5. Try to be present in your groups chat while people are excited -
     * _Poll to see what your community wants_
     * _Share previews of upcoming releases_
@@ -186,7 +187,7 @@ Double check everything you've done up to this point, and everything you plan to
 **[How to Deploy Smart Contracts](/docs/deploying)** : Just your need-to-know(s)
 
 <br></br>
-[Build the Bear Market :buildthebear-in-progress:](https://www.buildthebear.market){ .md-button }
+[Build the Bear Market :buildthebear-btb-logo-alpha:](https://www.buildthebear.market){ .md-button }
 [GitHub :material-git:](https://github.com/Build-the-Bear){ .md-button }
 [Twitter :material-twitter:](https://twitter.com/BuildingtheBear){ .md-button }
 [Telegram :material-alert-octagram:](https://www.t.me/BuildtheBear){ .md-button }

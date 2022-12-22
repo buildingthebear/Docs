@@ -13,13 +13,13 @@ theme:
   favicon: extra/img/favicon.png
   custom_dir: ./overrides
   icon:
-    logo: buildthebear/in-progress
+    logo: buildthebear/btb-logo-alpha
     admonition:
-      note: buildthebear/in-progress
-      warning: buildthebear/in-progress
-      info: buildthebear/in-progress
-      success: buildthebear/in-progress
-      example: material/lan-connect
+      note: material/teddy-bear
+      warning: material/alert-rhombus
+      info: material/teddy-bear
+      success: material/check-bold
+      example: material/server-network
   palette:
     primary: white
     accent: amber

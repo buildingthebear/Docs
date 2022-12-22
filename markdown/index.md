@@ -16,7 +16,7 @@ This documentation is designed to improve the overall quality of projects and pa
 **[Token Analysis Guide](/docs/analysis)** : What to look for, and what NOT to look for
 
 <br></br>
-[Build the Bear Market :buildthebear-in-progress:](https://www.buildthebear.market){ .md-button }
+[Build the Bear Market :buildthebear-btb-logo-alpha:](https://www.buildthebear.market){ .md-button }
 [GitHub :material-git:](https://github.com/Build-the-Bear){ .md-button }
 [Twitter :material-twitter:](https://twitter.com/BuildingtheBear){ .md-button }
 [Telegram :material-alert-octagram:](https://www.t.me/BuildtheBear){ .md-button }

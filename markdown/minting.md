@@ -48,7 +48,7 @@ So you've got a concept...
 **[How to Deploy Smart Contracts](/docs/deploying)** : Just your need-to-know(s)
 
 <br></br>
-[Build the Bear Market :buildthebear-in-progress:](https://www.buildthebear.market){ .md-button }
+[Build the Bear Market :buildthebear-btb-logo-alpha:](https://www.buildthebear.market){ .md-button }
 [GitHub :material-git:](https://github.com/Build-the-Bear){ .md-button }
 [Twitter :material-twitter:](https://twitter.com/BuildingtheBear){ .md-button }
 [Telegram :material-alert-octagram:](https://www.t.me/BuildtheBear){ .md-button }
