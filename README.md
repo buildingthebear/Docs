@@ -18,7 +18,7 @@ Install dependencies:
 Build and serve the app:
 
 ```bash
-    mkdocs build && mkdocs serve
+    python3 -m mkdocs build && python3 -m  mkdocs serve
 ```
 
 ## Contributing

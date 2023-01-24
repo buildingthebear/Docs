@@ -1,11 +1,11 @@
 # **:material-account-cowboy-hat: Token Launch Guide**
 !!! warning
-    Document under construction and subject to change. Additional resources and diagrams coming soon
+    Document under construction and subject to change. Not to be considered a comprehensive guide.
 
 Depending on your project/expectations/goals, items listed may not be applicable.
 Further, this is not a guaranteed path to launching or running a successful token, and this documentation should never be treated as law.
 Information below is outlined as a checklist of sorts; actions a builder may want to consider before launching a tokenized project.
-
+<hr>
 ### **:material-package-variant: Create your concept**
 
 There isn't a right or wrong answer when it comes to your concept. Folks are interested in just about anything you can imagine, and there's plenty of room at the table for everyone to eat.
@@ -138,7 +138,7 @@ Another critically important phase of a healthy project launch is outlining a de
 6. Host or get involved in AMAs/Spaces
 7. Costly options -
     * _Calls should be spaced to bring the right volume, at the right time, for the right price. We'd advise against calling your project on launch day_ _**(if they can't hold 24hrs, they won't)**_
-        1. Callers rankings - [BSC Grow :material-book-arrow-up-outline:](https://bscgrow.com/who-do-you-follow/)
+        1. Callers rankings - [Top100Token :material-book-arrow-up-outline:](https://top100token.com/signals), [BSC Grow :material-book-arrow-up-outline:](https://bscgrow.com/who-do-you-follow/)
     * _'SHILL Team Six' (twitter and telegram sers). There are plenty of services you can purchase for a reasonable price. Take care to make sure you choose correctly; and be wary, a wise man once said, "when you see 'RAID IN 3 2 1' in the chat... it's over."_
     * _Message-board posts: [De-Fi Subreddits :material-book-arrow-up-outline:](https://www.reddit.com/search/?q=Fair%20Launch&include_over_18=1&type=sr), [4chan :material-book-arrow-up-outline:](https://boards.4channel.org/biz/), etc._
     * _Relevant Ad Spaces: [Cameo :material-book-arrow-up-outline:](https://www.cameo.com/), [4chan :material-book-arrow-up-outline:](https://www.4channel.org/advertise), [Moonarch :material-book-arrow-up-outline:](https://t.me/MoonarchPromo)_
@@ -189,5 +189,3 @@ Double check everything you've done up to this point, and everything you plan to
 <br></br>
 [Build the Bear Market :buildthebear-btb-logo-alpha:](https://www.buildthebear.market){ .md-button }
 [GitHub :material-git:](https://github.com/Build-the-Bear){ .md-button }
-[Twitter :material-twitter:](https://twitter.com/BuildingtheBear){ .md-button }
-[Telegram :material-alert-octagram:](https://www.t.me/BuildtheBear){ .md-button }
