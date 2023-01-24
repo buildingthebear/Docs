@@ -18,12 +18,13 @@ Install dependencies:
 Build and serve the app:
 
 ```bash
-    python3 -m mkdocs build && python3 -m  mkdocs serve
+    python3 -m mkdocs build && python3 -m mkdocs serve
 ```
 
 ## Contributing
 
-- Fork the repo and create a new branch, then make your changes
+- Fork the repo and create a new branch, then make your changes to files in the **/markdown** directory
+- Build your changes, and move / replace applicable files into the root directory
 - Use title-case in your commit messages with a brief, comma-delimited list of changes
 - Create a pull request to the 'dev' branch with a description of changes, and expected results
 - Request review from Build-the-Bear
